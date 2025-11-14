@@ -382,11 +382,14 @@ body::after {
 }
 
 .hero-visual-caption {
-  font-size: 0.8rem;
-  color: var(--text-soft);
+  font-size: 0.85rem;
+  color: #ffffff; /* bright white for visibility */
   text-align: center;
-  max-width: 220px;
+  max-width: 240px;
+  opacity: 0.95; /* nearly opaque */
+  mix-blend-mode: normal; /* ensures it doesn't blend into background */
 }
+
 
 /* Avatar motion */
 @keyframes heroAvatarFloat {
