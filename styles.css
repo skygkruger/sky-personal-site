@@ -497,6 +497,7 @@ body::after {
   transform: translateY(0);
   transition: transform 0.16s ease, box-shadow 0.16s ease,
     border-color 0.16s ease;
+  z-index: 0;
 }
 
 .card::before {
@@ -510,7 +511,36 @@ body::after {
   );
   opacity: 0;
   transition: opacity 0.2s ease;
+  pointer-events: none; /* ← important: do NOT block clicks */
+  z-index: 0;
 }
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.75);
+  border-color: rgba(148, 163, 184, 0.7);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card-actions {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* ← sits above the overlay */
+}
+
+/* Make sure links are clickable + use pointer cursor */
+.card-actions a {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
 
 .card:hover {
   transform: translateY(-4px);
@@ -556,13 +586,8 @@ body::after {
   color: var(--text-soft);
 }
 
-.card-actions {
-  margin-top: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  align-items: center;
-}
+
+
 
 .text-link {
   font-size: 0.82rem;
