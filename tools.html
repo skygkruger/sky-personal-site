@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tools | SkyCloud Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">SkyCloud&nbsp;Solutions</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="tools.html" class="active">Tools</a>
+      <a href="care-support.html">Care Support</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <h2>SaaS & Utility Tools</h2>
+        <p>
+          Small, calm web apps built on AWS — starting with document utilities and tools for caregivers,
+          creators, and solo founders.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>SkyCloud PDF Merge Tool</h3>
+          <p>
+            Combine multiple PDFs into a single, clean file in seconds. No ads, no logins, no clutter —
+            just upload, order, and merge.
+          </p>
+          <ul class="tag-list">
+            <li>Lambda</li>
+            <li>S3</li>
+            <li>API Gateway</li>
+          </ul>
+          <div class="card-actions">
+            <!-- TODO: update href when your tool is live -->
+            <a class="btn small disabled" aria-disabled="true">Open live app (soon)</a>
+            <span class="text-link disabled">Gumroad · Etsy · Fiverr (soon)</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>PDF Tool Suite</h3>
+          <p>
+            Planned suite with merge, split, compress, and extract functions — all browser-based and
+            built with privacy in mind.
+          </p>
+          <ul class="tag-list">
+            <li>Lambda</li>
+            <li>S3</li>
+            <li>CloudFront</li>
+          </ul>
+          <div class="card-actions">
+            <span class="text-link disabled">In development</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>AI Resource Library Generator</h3>
+          <p>
+            Generate visual schedules, checklists, and support resources tailored to families and caregivers,
+            using a calm AI experience.
+          </p>
+          <ul class="tag-list">
+            <li>Bedrock</li>
+            <li>Lambda</li>
+            <li>S3</li>
+          </ul>
+          <div class="card-actions">
+            <span class="text-link disabled">Planned</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Caregiver Habit & Behavior Tracker</h3>
+          <p>
+            Track routines, behaviors, and notes in one focused view — designed for DSPs and families
+            juggling real-world care.
+          </p>
+          <ul class="tag-list">
+            <li>Cognito</li>
+            <li>DynamoDB</li>
+            <li>CloudWatch</li>
+          </ul>
+          <div class="card-actions">
+            <span class="text-link disabled">Planned</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>AI Reflection Journal</h3>
+          <p>
+            A quiet journaling space that helps surface patterns, burnout signals, and gentle insights
+            over time.
+          </p>
+          <ul class="tag-list">
+            <li>Bedrock</li>
+            <li>DynamoDB</li>
+            <li>IAM</li>
+          </ul>
+          <div class="card-actions">
+            <span class="text-link disabled">Planned</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>CSV Dashboard Generator</h3>
+          <p>
+            Upload a CSV and get clean charts, summaries, and exports — for small teams who don’t live
+            in spreadsheets.
+          </p>
+          <ul class="tag-list">
+            <li>Lambda</li>
+            <li>S3</li>
+            <li>QuickSight</li>
+          </ul>
+          <div class="card-actions">
+            <span class="text-link disabled">Planned</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Micro-SaaS Waitlist Builder</h3>
+          <p>
+            Simple, branded waitlist pages with email capture and exports — perfect for shipping
+            ideas before the full build.
+          </p>
+          <ul class="tag-list">
+            <li>SES</li>
+            <li>DynamoDB</li>
+            <li>API Gateway</li>
+          </ul>
+          <div class="card-actions">
+            <span class="text-link disabled">Planned</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sky. Built on AWS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

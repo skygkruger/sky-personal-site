@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Services | SkyCloud Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">SkyCloud&nbsp;Solutions</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="tools.html">Tools</a>
+      <a href="care-support.html">Care Support</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <h2>Cloud Engineering Services</h2>
+        <p>
+          Lightweight consulting for solo founders and small teams who want modern AWS infrastructure
+          without the chaos.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Architecture Review & Roadmap</h3>
+          <p>
+            A focused review of your current stack (or idea), with a clear AWS-first roadmap:
+            what to keep, what to fix, and what to ignore for now.
+          </p>
+          <ul class="tag-list">
+            <li>AWS best practices</li>
+            <li>Cost awareness</li>
+            <li>Simple diagrams</li>
+          </ul>
+          <div class="card-actions">
+            <a href="contact.html" class="btn small">Request a review</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Static Site & Landing Pages</h3>
+          <p>
+            Fast, low-maintenance sites on S3 + CloudFront — ideal for landing pages, documentation,
+            and quiet marketing sites.
+          </p>
+          <ul class="tag-list">
+            <li>S3</li>
+            <li>CloudFront</li>
+            <li>Route 53</li>
+          </ul>
+          <div class="card-actions">
+            <a href="contact.html" class="btn small">Discuss a site</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Micro-SaaS Infrastructure</h3>
+          <p>
+            Infrastructure for small tools: PDFs, dashboards, or waitlists. Serverless-first,
+            with containers when it actually helps.
+          </p>
+          <ul class="tag-list">
+            <li>Lambda & API Gateway</li>
+            <li>DynamoDB</li>
+            <li>Fargate (containers)</li>
+          </ul>
+          <div class="card-actions">
+            <a href="contact.html" class="btn small">Plan a tool</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="section-header">
+        <h2>Selected AWS Projects</h2>
+        <p>
+          Early projects where I practice AWS fundamentals and production-style deployments.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>AWS-Hosted Portfolio Site</h3>
+          <p>
+            Static portfolio site using S3, CloudFront, and custom domain. Built as a sandbox for
+            deployments, caching, and versioned assets.
+          </p>
+          <ul class="tag-list">
+            <li>S3</li>
+            <li>CloudFront</li>
+            <li>Route 53</li>
+          </ul>
+          <div class="card-actions">
+            <a
+              href="https://d1a0wreol7j90p.cloudfront.net"
+              class="btn small"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View live
+            </a>
+            <a
+              href="https://github.com/skygkruger/care-support-app"
+              class="btn ghost small"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Future Project Slot</h3>
+          <p>
+            Reserved for an upcoming observability or monitoring project: metrics, logs, and alerts that
+            don’t spam your inbox.
+          </p>
+          <ul class="tag-list">
+            <li>CloudWatch</li>
+            <li>Metrics</li>
+            <li>Alerts</li>
+          </ul>
+          <div class="card-actions">
+            <span class="text-link disabled">Coming soon</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sky. Built on AWS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Care Support | SkyCloud Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">SkyCloud&nbsp;Solutions</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="tools.html">Tools</a>
+      <a href="care-support.html" class="active">Care Support</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <h2>Care Support Platform</h2>
+        <p>
+          A calm, focused space for caregivers, families, and individuals with intellectual and
+          developmental disabilities.
+        </p>
+      </div>
+
+      <div class="section-body">
+        <p>
+          I have worked as a direct support professional (DSP) for several years and my life has been forever enriched because of it. 
+          When I finally began pursing an education in cloud technologies, my immediate goal became to explore the fusion of these experiences, not isolate them from eachother. 
+          The mission of this project is to create a central, accessible hub where caregivers and
+          families alike can discover tools, resources, and support without wading through the noisy, ad-filled
+          sites and often hostile internet.
+        </p>
+        <p>
+          As the platform evolves, it will host micro-tools, resource libraries, and guided workflows
+          designed specifically for support professionals, supported individuals, and their families.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="section-header">
+        <h2>Planned Features</h2>
+        <p>
+          Built on AWS for reliability and privacy, with design driven by real-world care needs.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Resource Library</h3>
+          <p>
+            Curated links, guides, and templates to enrich the lives of caregivers and families alike — easy to browse,
+            printable, and mobile-friendly.
+          </p>
+          <ul class="tag-list">
+            <li>S3</li>
+            <li>CloudFront</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>AI Resource Generator</h3>
+          <p>
+            Tools to generate visual schedules, communication aids, and task breakdowns tailored
+            to each individual's needs.
+          </p>
+          <ul class="tag-list">
+            <li>Bedrock</li>
+            <li>Lambda</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Caregiver Journaling & Notes</h3>
+          <p>
+            A simple way to log notes, patterns, and progress in supported individuals while devoid of clinical documentation.
+          </p>
+          <ul class="tag-list">
+            <li>DynamoDB</li>
+            <li>Cognito</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sky. Built on AWS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
